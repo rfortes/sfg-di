@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 /**
  * @author rfortes on 22/11/20
  */
-@Profile("EN")
+@Profile({"ES", "default"})
 @Service("i18nService")
 public class I18nSpanishService implements GreetingService{
 
     @Override
     public String sayGreeting() {
-        return "Hello World - EN";
+        return "Hola Mundo - ES";
     }
 }
